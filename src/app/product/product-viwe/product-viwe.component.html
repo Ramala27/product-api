@@ -1,0 +1,20 @@
+<p>product-viwe works!</p>
+
+<h3>product - {{id}}</h3>
+
+<!-- <div>
+    {{selectedProduct | json}}
+</div> -->
+
+<table *ngIf="selectedProduct" border="1">
+<tbody>
+<tr>
+<th>product Id</th>
+<td>{{selectedProduct.productId}}</td>
+</tr>
+<tr>
+    <th>product Name</th>
+    <td>{{selectedProduct.productName}}</td>
+    </tr>
+</tbody>
+</table>
